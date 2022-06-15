@@ -1,0 +1,116 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: turquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-container {
+  width: 40vw;
+  height: 80vh;
+  background-color: dimgray;
+  border-radius: 15px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-top {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.display-bottom {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-text {
+  font-size: 2rem;
+}
+
+.extra-controls {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#delete {
+  width: 44%;
+  border-style: none;
+  color: darkred;
+  background-color: pink;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#delete:hover {
+  background-color: black;
+}
+
+#clear {
+  width: 44%;
+  border-style: none;
+  color: white;
+  background-color: gold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#clear:hover {
+  background-color: black;
+}
+
+.input-container {
+  flex: 10;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.input {
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.input:hover {
+  background-color: azure;
+}
+
+.stored-num {
+  width: 90%;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.stored-operand {
+  width: 10%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.operand {
+  background-color: goldenrod;
+}
